@@ -1,0 +1,46 @@
+[
+  {
+    "productName": "Hà Nội",
+    "pricePerItem": 6000000,
+    "quantity": 123,
+    "total": 738000000,
+    "customerName": "wasawas",
+    "customerPhone": "awsas",
+    "customerAddress": "33sa3",
+    "customerNote": "was",
+    "date": "2024-11-23T14:34:54.213Z"
+  },
+  {
+    "productName": "Hà Nội",
+    "pricePerItem": 6000000,
+    "quantity": 3,
+    "total": 18000000,
+    "customerName": "sas",
+    "customerPhone": "saww",
+    "customerAddress": "was",
+    "customerNote": "as",
+    "date": "2024-11-23T14:35:10.703Z"
+  },
+  {
+    "productName": "Hà Nội",
+    "pricePerItem": 6000000,
+    "quantity": 3,
+    "total": 18000000,
+    "customerName": "ss",
+    "customerPhone": "as",
+    "customerAddress": "wes",
+    "customerNote": "3",
+    "date": "2024-11-23T14:36:04.079Z"
+  },
+  {
+    "productName": "Hà Nội",
+    "pricePerItem": 6000000,
+    "quantity": 3,
+    "total": 18000000,
+    "customerName": "Huy Nguyen",
+    "customerPhone": "0901196480",
+    "customerAddress": "55/5",
+    "customerNote": "sdt 09011111111",
+    "date": "2024-11-26T05:57:58.175Z"
+  }
+]

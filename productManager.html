@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Thêm Sản Phẩm</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Quản Trị Viên - Thêm Sản Phẩm</h1>
+        <form id="add-product-form">
+            <label for="name">Tên sản phẩm:</label>
+            <input type="text" id="name" required>
+
+            <label for="price">Giá sản phẩm:</label>
+            <input type="number" id="price" required>
+
+            <label for="image">Link hình ảnh:</label>
+            <input type="text" id="image" required>
+
+            <label for="category">Danh mục:</label>
+            <select id="category" required>
+                <option value="domestic">Du lịch nội địa</option>
+                <option value="foreign">Du lịch quốc tế</option>
+            </select>
+
+            <!-- Số lượt đánh giá chỉ hiển thị khi chọn sản phẩm quốc tế -->
+            <div id="reviews-container" style="display: none;">
+                <label for="reviews">Số lượt đánh giá (Chỉ cho sản phẩm quốc tế):</label>
+                <input type="number" id="reviews">
+            </div>
+
+            <button type="submit">Thêm sản phẩm</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

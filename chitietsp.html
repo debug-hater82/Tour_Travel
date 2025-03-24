@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!--  logo -->
+            <a href="/index.html" class="logo">Tour<span>Travel</span></a>
+            <ul class="navbar">
+                <li><a href="/index.html" class="active">Trang chủ</a></li>
+                <li><a href="#tours">Tours trong nước</a></li>
+                <li><a href="/contact.html">Liên Hệ</a></li>
+                <li><a href="#foreigntours">Tours ngoài nước</a></li>
+                <li><a href="#blog">Blogs</a></li>
+            </ul>
+            <!-- search icon -->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!-- search box -->
+            <div class="search-box container">
+                <input type="search" name="search" id="search-input" placeholder="Tìm kiếm sản phẩm...">
+            </div>
+            <!-- user icon -->
+            <i class='bx bxs-user' id ="user-icon"></i>
+        </div>
+    </header>
+    
+    <section class="home" id="home-text">
+        <div class="home-text">
+            
+            <h1>Chúng Tôi Có <br>Mọi <span>Tour</span> Bạn cần</h1><br>
+            <!-- <p>Lorem ipsum <br> lorem ipsum </p> -->
+            <!-- home-button -->
+             <a href="#" class="btn">Xem Ngay</a>
+        </div>
+    </section>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="img/hanoi.jpg" alt="Hà Nội">
+        </div>
+        <div class="product-info">
+            <h2>Hà Nội</h2>
+            <p class="price">6,000,000 VNĐ</p>
+            <p class="description">Khám phá vẻ đẹp cổ kính và văn hóa đặc sắc của Thủ đô Hà Nội với chuyến đi 3 ngày 2 đêm đầy thú vị!</p>
+        </div>
+    </div>
+
+    <div class="checkout-form">
+        <h3>Thông Tin Nhận Hàng</h3>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số Điện Thoại:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa Chỉ:</label>
+                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ nhận hàng" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Số Lượng:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+            <div class="form-group">
+                <label for="total">Tổng Thành Tiền:</label>
+                <p id="total" style="font-weight: bold; color: #FF5722;">6,000,000 VNĐ</p>
+            </div>
+            <div class="form-group">
+                <label for="note">Ghi Chú:</label>
+                <textarea id="note" name="note" rows="4" placeholder="Ghi chú thêm (không bắt buộc)"></textarea>
+            </div>
+            <button class="btn buy-btn" data-name="Hà Nội" data-price="6000000">
+                <i class='bx bxs-cart-add'></i> Xác nhận đặt hàng
+            </button>
+        </form>
+    </div>
+    
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">Tour<span>Travel</span></span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-youtube' ></i></a>
+                </div> 
+            </div>
+            <div class="footer-box">
+                <h3>Trang</h3>
+                <a href="#">Trang chủ</a>
+                <a href="#">Tours trong nước</a>
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Tours Ngoài nước</a>
+            </div>
+            <div class="footer-box">
+                <h3>Chính sách</h3>
+                <a href="#">Hậu mãi</a>
+                <a href="#">Hoàn tiền</a>
+                <a href="#">Chăm sóc khách hàng</a>
+            </div>
+            <div class="footer-box">
+                <h3>Liên hệ</h3>
+                <p>Quận 1: 090111111</p>
+                <p>Quận 3: 090222222</p>
+                <p>Quận 12 090333333</p>
+            </div>
+        </div>
+     </section>
+     <!-- copyright -->
+     <div class="copyright">
+        <p>&#169; Huy Nguyen All Right Reserved</p>
+    </div>
+    <script src="order.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

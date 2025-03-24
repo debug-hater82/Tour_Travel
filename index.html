@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!--  logo -->
+            <a href="/index.html" class="logo">Tour<span>Travel</span></a>
+            <ul class="navbar">
+                <li><a href="/index.html" class="active">Trang chủ</a></li>
+                <li><a href="#tours">Tours trong nước</a></li>
+                <li><a href="/contact.html">Liên Hệ</a></li>
+                <li><a href="#foreigntours">Tours ngoài nước</a></li>
+                <li><a href="#blog">Blogs</a></li>
+            </ul>
+            <!-- search icon -->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!-- search box -->
+            <div class="search-box container">
+                <input type="search" name="search" id="search-input" placeholder="Tìm kiếm sản phẩm...">
+            </div>
+            <!-- user icon -->
+            <i class='bx bxs-user' id ="user-icon"></i>
+        </div>
+    </header>
+    
+    <section class="home" id="home-text">
+        <div class="home-text">
+            
+            <h1>Chúng Tôi Có <br>Mọi <span>Tour</span> Bạn cần</h1><br>
+            <!-- home-button -->
+             <a href="#" class="btn">Xem Ngay</a>
+        </div>
+    </section>
+    <!-- Popup Account -->
+    <div id="account-popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn" id="close-popup">&times;</span>
+            <div class="tabs">
+                <button id="login-tab" class="active">Đăng nhập</button>
+                <button id="register-tab">Đăng ký</button>
+            </div>
+            <div class="form-container">
+                <!-- Login Form -->
+                <form id="login-form" class="active">
+                    <h2>Đăng nhập</h2>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Mật khẩu" required>
+                    <button type="submit" class="btn">Đăng nhập</button>
+                </form>
+
+                <!-- Register Form -->
+                <form id="register-form">
+                    <h2>Đăng ký</h2>
+                    <input type="text" placeholder="Tên người dùng" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Mật khẩu" required>
+                    <input type="password" placeholder="Nhập lại mật khẩu" required>
+                    <button type="submit" class="btn">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tour trong nuó7c section -->
+     <section class="tours" id="tours">
+        <div class="heading">
+            <span>Tours Trong Nước</span>
+            <h2>Chất Lượng Nhất</h2>
+        </div>
+        <!-- tours trong nước container -->
+         <div class="tours-container container">
+        
+            
+            
+         </div>
+    
+    <!-- Giỏ hàng -->
+    <!-- Thu nhỏ giỏ hàng -->
+    <div class="cart-container" id="cart-container">
+        <button class="minimize-cart" id="minimize-cart">Thu nhỏ</button>
+        <h2>Giỏ hàng</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Tổng cộng: 0 VNĐ</p>
+    </div>
+    
+    
+    
+     </section>
+     <!-- about -->
+      <section class="about container" id="about">
+        <div class="about-img">
+            <img src="img/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>Về chúng tôi</span>
+            <h2>Tour chất lượng với <br>Giá cả phải chăng</h2><br>
+            <!-- about button -->
+             <a href="#" class="btn">Tìm hiểu thêm</a>
+        </div>
+      </section>
+      <!-- Tour nước ngoài -->
+       <section class="foreigntours" id="foreigntours">
+            <div class="heading">
+                <span>Tour Ngoài Nước</span>
+                <h2>Chất Lượng Nhất</h2>
+
+            </div>
+            <!-- tours nước ngoài container -->
+             <div class="foreigntours-container container">
+                <!-- box 1 -->
+                <div class="box">
+                    <img src="img/bali.jpg" alt="">
+                    <h3>Bali</h3>
+                    <span>20,000,000</span>
+                    <a href="#"><i class='bx bxs-star' >(10 Reviews)</i></a>
+                    <button class="btn buy-btn" data-name="Bali" data-price="20000000">Mua Ngay</button>
+                    <button class="details-btn"><a href="/chitietsp.html" class="details">Xem Chi Tiết</a></button>
+                </div>
+             </div>
+       </section>
+       <!-- blog container -->
+        <seciton class="blog" id="blog">
+            <div class="heading">
+                <span>Blog Du Lịch</span>
+                <h2>Hot Nhất</h2>
+            </div>
+            <!-- blog container -->
+             <div class="blog-container container">
+                <!-- box 1 -->
+                <div class="box">
+                    <img src="img/blog1.jpg" alt="">
+                    <span>July 10 2024</span>
+                    <h3>Đi Du Lịch Hà Nội Trọn Gói Giá Rẻ</h3>
+                    <a href="#" class="blog-btn">Xem Thêm<i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+                <!-- box 2 -->
+                <div class="box">
+                    <img src="img/blog2.jpg" alt="">
+                    <span>October 30 2024</span>
+                    <h3>Đà Lạt Mộng Mơ Dịp Cuối Năm</h3>
+                    <a href="#" class="blog-btn">Xem Thêm<i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+                <!-- box 3 -->
+                <div class="box">
+                    <img src="img/blog3.jpg" alt="">
+                    <span>Feb 20 2024</span>
+                    <h3>Hội An Và Những Nét Đẹp Không Phai Nhòa Theo Năm Tháng</h3>
+                    <a href="#" class="blog-btn">Xem Thêm<i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+             </div>
+        </seciton>
+        <!-- footer -->
+         <section class="footer">
+            <div class="footer-container container">
+                <div class="footer-box">
+                    <a href="#" class="logo">Tour<span>Travel</span></span></a>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    </div> 
+                </div>
+                <div class="footer-box">
+                    <h3>Trang</h3>
+                    <a href="#">Trang chủ</a>
+                    <a href="#">Tours trong nước</a>
+                    <a href="#">Về chúng tôi</a>
+                    <a href="#">Tours Ngoài nước</a>
+                </div>
+                <div class="footer-box">
+                    <h3>Chính sách</h3>
+                    <a href="#">Hậu mãi</a>
+                    <a href="#">Hoàn tiền</a>
+                    <a href="#">Chăm sóc khách hàng</a>
+                </div>
+                <div class="footer-box">
+                    <h3>Liên hệ</h3>
+                    <p>Quận 1: 090111111</p>
+                    <p>Quận 3: 090222222</p>
+                    <p>Quận 12 090333333</p>
+                </div>
+            </div>
+         </section>
+         <!-- copyright -->
+        <div class="copyright">
+            <p>&#169; Huy Nguyen All Right Reserved</p>
+        </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
